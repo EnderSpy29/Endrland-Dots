@@ -5,6 +5,7 @@
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
 **THIS IS FOR MY OWN PERSONAL USE**
+
 I will try to keep this as comprehensive as possible but if you run into any issues you'll have to figure it out on your own.
 
 To Set up the Themes you need to Install the Material-Black-Plum GTK Theme and the Catppuccin QT theme
@@ -23,7 +24,7 @@ then set kvantum as the theme in qt5ct and qt6ct
 
 **cava**
 
-Cava has a color gradient option which can be enabled by changing 'gradient = 0' to 'gradient = 1' in the cava-colors tempalte found at '~/.config/wallust/templates'
+Cava has a color gradient option which can be enabled by changing 'gradient = 0' to 'gradient = 1' in the cava-colors template found at '~/.config/wallust/templates'
 Once you have done this simply reselect a wallpaper and reload cava
  
 **Require Package list** WIP
