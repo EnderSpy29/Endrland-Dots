@@ -31,3 +31,5 @@ threshold = 10
 Hyprland = { template = 'templates/colors-hyprland.conf', target = '~/.config/hypr/hypr-colors.conf' }
 
 Vscodium = { template = 'templates/pywal-colors', target = '~/.cache/wal/colors' }
+
+Cava = { template = 'templates/cava-colors', target = '~/.config/cava/config' }
