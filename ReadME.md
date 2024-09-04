@@ -35,4 +35,4 @@ grim slurp neofetch fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-
 
 **Packages i know have to be installed from AUR** (yay, paru or whatever you use)
 
-aylurs-gtk-shell-git waypaper wallust cava nwg-look qt5ct qt6ct 
+aylurs-gtk-shell-git waypaper wallust cava nwg-look qt5ct qt6ct hyprpicker
