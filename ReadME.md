@@ -30,8 +30,8 @@ https://aylur.github.io/astal/guide/getting-started/installation
 
 This is all the required packages + Some just to be safe ones + Some rice terminal stuff (yazi file manager my beloved)
 
-grim slurp neofetch fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+grim slurp fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 
 **Packages i know have to be installed from AUR** (yay, paru or whatever you use)
 
-waypaper wallust nwg-look qt5ct qt6ct hyprpicker
+waypaper maxfetch wallust nwg-look qt5ct qt6ct hyprpicker
