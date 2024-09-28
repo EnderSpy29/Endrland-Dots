@@ -26,6 +26,10 @@ then set kvantum as the theme in qt5ct and qt6ct
 
 Cava has a color gradient option which can be enabled by changing 'gradient = 0' to 'gradient = 1' in the cava-colors template found at '~/.config/wallust/templates'
 Once you have done this simply reselect a wallpaper and reload cava
+
+**AGS/ASTAL INTRUCTIONS**
+using AGSv2 and Astal
+https://aylur.github.io/astal/guide/getting-started/installation
  
 **Require Package list** WIP
 
@@ -35,4 +39,4 @@ grim slurp neofetch fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-
 
 **Packages i know have to be installed from AUR** (yay, paru or whatever you use)
 
-aylurs-gtk-shell-git waypaper wallust cava nwg-look qt5ct qt6ct hyprpicker
+waypaper wallust cava nwg-look qt5ct qt6ct hyprpicker
