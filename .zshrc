@@ -6,23 +6,7 @@ cat ~/.cache/wallust/sequences
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time Oh My Zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="af-magic"
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -44,7 +28,8 @@ source $ZSH/oh-my-zsh.sh
 alias ff="fastfetch"
 
 #colorscript on new terminal
-~/.config/hypr/scripts/pokemon.sh
+#~/.config/hypr/scripts/pokemon.sh
+maxfetch
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
