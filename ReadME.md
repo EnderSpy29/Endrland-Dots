@@ -1,6 +1,6 @@
 ## Endrland-Dots
 
-<img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/main/Showoff/Arch-UwU-Showcase.png">
+<img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/refs/heads/main/Showoff/Kinich-Showoff.png">
 
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
