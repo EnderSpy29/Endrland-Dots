@@ -30,4 +30,4 @@ threshold = 6
 
 [templates]
 Hyprland = { template = 'colors-hyprland.conf', dst = '~/.config/hypr/hypr-colors.conf' }
-Cava = { template = 'cava-colors', dst = '~/.config/cava/config' }
+AGS = { template = 'colors-style.scss', dst = '~/.config/ags/style.scss' }
