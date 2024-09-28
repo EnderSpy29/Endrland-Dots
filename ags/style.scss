@@ -1,0 +1,88 @@
+window.Bar{
+    font-family: "NotoMono Nerd Font";
+    opacity: 0.92;
+    background: transparent;
+    color: @theme_fg_color;
+}
+
+centerbox{
+    min-height: 30px;
+    margin-top: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+box{
+    border: 2px solid #B396E8;
+    background: @theme_bg_color;
+    border-radius: 4px;
+}
+
+button{
+    border-radius: 4px;
+}
+
+.Notifcolor{
+    color: #B396E8;
+    border: 2px solid #B396E8;
+    border-radius: 1px;
+}
+.Workspaces{
+    border-width: 0px;
+}
+
+.Media{
+    border-width: 0px;
+}
+
+.Volume{
+    border-width: 0px;
+}
+
+.Volume icon {
+    margin-left: 10px;
+}
+.SysTray{
+    border-width: 0px;
+}
+
+/*window.Bar{
+    opacity: 0.92;
+    background: @theme_bg_color;
+    border-radius: 4px;
+    min-height: 30px;
+    margin-top: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+background: @theme_bg_color;
+
+button {
+    border: 2px solid transparent;
+    border-radius: 0px;
+}
+
+.Volume icon {
+    margin-left: 10px;
+}
+
+.Notifcolor {
+    color: #B396E8;
+    border: 2px solid #B396E8;
+    min-width: 310px;
+}
+
+.Workspaces .focused label {
+    color: #643AB0;
+}
+
+.Workspaces .focused {
+    border: 2px solid #643AB0;
+}
+
+.Time {
+    margin: 2px;
+    font-size: 14px;
+}
+*/
