@@ -15,6 +15,7 @@ To Set up the Themes you need to Install the Material-Black-Plum GTK Theme and t
 Get the Material-Black-Plum version here: https://www.gnome-look.org/p/1316887
 Extract it and place the Material-Black-Plum folder in ~/.themes (if this folder does need exist MAKE ONE 'mkdir .themes'
 If you decide to download a theme other than 'Material-Black-Plum' you will need to change the GTK_THEME argument in hyprland.conf
+you also need this dependency `gtk-engine-murrine`
 
 **QT Theme**
 
@@ -30,7 +31,7 @@ https://aylur.github.io/astal/guide/getting-started/installation
 
 This is all the required packages + Some just to be safe ones + Some rice terminal stuff (yazi file manager my beloved)
 
-grim slurp fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
+grim gtk-engine-murrine slurp fastfetch kvantum zsh kitty yazi mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 
 **Packages i know have to be installed from AUR** (yay, paru or whatever you use)
 
