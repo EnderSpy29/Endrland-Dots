@@ -1,11 +1,10 @@
-import { App, Gdk, Gtk } from "astal"
+import { App, Gdk, Gtk } from "astal/gtk3"
 import style from "inline:./style.scss"
 import Bar from "./widget/Bar"
 
 function main() {
     const bars = new Map<Gdk.Monitor, Gtk.Widget>()
 
-    // initialize
     for (const gdkmonitor of App.get_monitors()) {
         bars.set(gdkmonitor, Bar(gdkmonitor))
     }

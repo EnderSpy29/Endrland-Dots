@@ -1,4 +1,6 @@
-import { App, Variable, Astal, Gtk, Gdk, GLib, bind } from "astal"
+import { App } from "astal/gtk3"
+import { Variable, GLib, bind } from "astal"
+import { Astal, Gtk, Gdk } from "astal/gtk3"
 import Hyprland from "gi://AstalHyprland"
 import Mpris from "gi://AstalMpris"
 import Wp from "gi://AstalWp"
@@ -31,7 +33,7 @@ function MediaWidget( {player} : {player: Mpris.Player}) {
         {bind(mpris, "players").as(ps => {
           if(music.available) return <MediaWidget player={music}/>
           else if(ps.length > 0) return <MediaWidget player={ps[0]} />
-          else return <button label="Nothing pla"/>
+          else return <button max_width_chars={12} ellipsize={Pango.EllipsizeMode.END} label=" Nothing. "/>
         })}
       </box>
   }
@@ -55,20 +57,17 @@ function Workspaces() {
 
 function SysTray() {
     const tray = Tray.get_default()
+
     return <box className="SysTray">
-        {bind(tray, "items").as(items => items.map(item => {
-            if (item.iconThemePath)
-                App.add_icons(item.iconThemePath)
-            const menu = item.create_menu()
-            return <button
+        {bind(tray, "items").as(items => items.map(item => (
+            <menubutton
                 tooltipMarkup={bind(item, "tooltipMarkup")}
-                onDestroy={() => menu?.destroy()}
-                onClickRelease={self => {
-                    menu?.popup_at_widget(self, Gdk.Gravity.SOUTH, Gdk.Gravity.NORTH, null)
-                }}>
-                <icon gIcon={bind(item, "gicon")} />
-            </button>
-        }))}
+                usePopover={false}
+                actionGroup={bind(item, "action-group").as(ag => ["dbusmenu", ag])}
+                menuModel={bind(item, "menu-model")}>
+                <icon gicon={bind(item, "gicon")} />
+            </menubutton>
+        )))}
     </box>
 }
 
@@ -82,6 +81,7 @@ function Time({ format = " %H:%M - %b %e. " }) {
     />
 }
 
+// Make this use a Variable or something idk
 function Notification(){
     const notifd = Notifd.get_default()
     const label = <label max_width_chars={35} ellipsize={Pango.EllipsizeMode.END}/>
