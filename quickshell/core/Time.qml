@@ -21,6 +21,6 @@ Singleton {
 	  interval: 1000
 	  running: true
 	  repeat: true
-	  onTriggered: dateProc.running = True
+	  onTriggered: dateProc.running = true
 	  }
 	}
