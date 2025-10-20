@@ -1,0 +1,27 @@
+# Ender
+
+spacing         = 0
+prefer_small_ascii = true
+hide_ascii      = false
+separator       = "|"
+
+[box]
+border          = "plain"
+visible         = true
+
+[box.inner_margin]
+x               = 1
+y               = 1
+
+[palette]
+glyph           = "○"
+spacing         = 2
+visible         = false
+
+[bar]
+glyph           = "I"
+hide_delimiters = true
+visible         = true
+
+[custom_ascii]
+path="~/.config/macchina/ASCII/leiaR2D2"
