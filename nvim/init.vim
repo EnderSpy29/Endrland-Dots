@@ -5,4 +5,3 @@ set expandtab
 set shiftwidth=2
 set cc=100
 set number
-
