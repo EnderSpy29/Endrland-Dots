@@ -27,7 +27,7 @@ prompt_Enderification2() {
   prompt_git_branch
   RPROMPT='%(?..%F{160}%? ↵%f)'
   RPROMPT+=" %F{237}%f\$(prompt_git_info)%f"
-  PROMPT=$NEWLINE'%F{032}%~ %F{105]}%(!.#.»)%f'
+  PROMPT=$NEWLINE'%F{032}%~ %F{105]}%(!.#.» )%f'
 }
 
 prompt_Enderification2
