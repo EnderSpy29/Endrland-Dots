@@ -42,6 +42,7 @@ ZSH_THEME_VIRTUALENV_SUFFIX="]%{$reset_color%}"
 
 # prompt
 
+NEWLINE=$'\n'
 ZSH_THEME_GIT_PROMPT_PREFIX=" %F{red}λ%f:"
 
 prompt_git_branch
@@ -50,5 +51,4 @@ if (( $+functions[virtualenv_prompt_info] )); then
   RPROMPT+='$(virtualenv_prompt_info)'
 fi
 RPROMPT+=" %F{237}%f\$(prompt_git_info)%f"
-    PROMPT="%F{237}%\${(l.\$(afmagic_dashes)..-.)}%f
-%F{032}%~ %F{105]}%(!.#.»)%f "
+    PROMPT="%F{237}%\${(l.\$(afmagic_dashes)..-.)}%f$NEWLINE%F{032}%~ %F{105]}%(!.#.»)%f "

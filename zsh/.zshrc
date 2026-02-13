@@ -1,7 +1,7 @@
 cat ~/.cache/wallust/sequences
 
 fpath=($ZDOTDIR/themes $fpath)
-[[ -z $IS_TUI ]] && autoload -Uz Enderification; Enderification
+[[ -z $IS_TUI ]] && autoload -Uz prompt_Enderification; prompt_Enderification
 
 local CACHE_DIR="$HOME/.cache/zsh"
 mkdir -p $CACHE_DIR
@@ -29,6 +29,7 @@ setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_REDUCE_BLANKS
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # go
 export PATH=$PATH:$GOBIN
@@ -40,7 +41,6 @@ macchina
 # zsh completion
 autoload -Uz compinit; compinit
 _comp_options+=(globdots)
-source $ZDOTDIR/completion.zsh
 
 # Menu completion
 setopt MENU_COMPLETE

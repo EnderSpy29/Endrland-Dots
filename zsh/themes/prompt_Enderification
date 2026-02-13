@@ -1,0 +1,33 @@
+# Enderification 2
+# by EnderSpy29
+
+prompt_git_branch() {
+  precmd_vcs_info() { vcs_info }
+  precmd_functions+=( precmd_vcs_info )
+  zstyle ':vcs_info:git:*' formats '%b'
+}
+
+prompt_git_info() {
+  [ ! -z "$vcs_info_msg_0_" ] && echo "$ZSH_THEME_GIT_PROMPT_PREFIX%F{white}$vcs_info_msg_0_%f$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}
+
+prompt_cursor_precmd() {
+  print -Pn "\e[ q"
+}
+
+prompt_Enderification2() {
+# Prompt function
+  
+  autoload -Uz add-zsh-hook
+  add-zsh-hook precmd prompt_cursor_precmd
+
+  ZSH_THEME_GIT_PROMPT_PREFIX=" %F{red}λ%f:"
+  NEWLINE=$'\n'
+
+  prompt_git_branch
+  RPROMPT='%(?..%F{160}%? ↵%f)'
+  RPROMPT+=" %F{237}%f\$(prompt_git_info)%f"
+  PROMPT=$NEWLINE'%F{032}%~ %F{105]}%(!.#.»)%f'
+}
+
+prompt_Enderification2
