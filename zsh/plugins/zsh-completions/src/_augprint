@@ -1,6 +1,6 @@
-#compdef console
+#compdef augprint
 # ------------------------------------------------------------------------------
-# Copyright (c) 2011 Github zsh-users - https://github.com/zsh-users
+# Copyright (c) 2025 Github zsh-users - https://github.com/zsh-users
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -28,40 +28,29 @@
 # Description
 # -----------
 #
-#  Completion script for symfony console (https://github.com/symfony/Console).
+# Completion script for augprint 1.14.1 (https://augeas.net/)
 #
 # ------------------------------------------------------------------------------
 # Authors
 # -------
 #
-#  * loranger (https://github.com/loranger)
-#  * Yohan Tambè´≤ (https://github.com/Cronos87)
+#  * Shohei Yoshida (https://github.com/syohex) <syohex@gmail.com>
 #
 # ------------------------------------------------------------------------------
 
-_console_find_console() {
-  echo "php $(find . -maxdepth 2 -mindepth 1 -name 'console' -type f | head -n 1)"
+_augprint_lens() {
+  local lenses=($(augtool --noload 'match /augeas/load/*/lens' | sed -e 's/.*@//'))
+  _values lenses $lenses
 }
 
-_console_get_command_list() {
-  IFS=" "
-  `_console_find_console` --no-ansi | \
-    sed "1,/Available commands/d" | \
-    awk '/  [a-z]+/ { print $0 }' | \
-    sed -E 's/^[ ]+//g' | \
-    sed -E 's/[:]+/\\:/g' | \
-    sed -E 's/[ ]{2,}/\:/g'
-}
-
-_console() {
-  local -a commands
-  IFS=$'\n'
-  commands=(`_console_get_command_list`)
-  _describe 'commands' commands
-}
-
-compdef _console php console
-compdef _console console
+_arguments \
+  '(- *)'{-h,--help}'[show help message]' \
+  '(-v --verbose)'{-v,--verbose}'[include the original numbered paths as comments in the output]' \
+  '(-r --regexp)'{-r-,--regexp=-}'[generate regular expressions to match values]:num' \
+  '(-l --lens)'{-l,--lens=}'[use lens for the given file]:lens:_augprint_lens' \
+  '(-t --target)'{-t,--target=}'[generate the script as if its path was really targetfile]:file:_files' \
+  '(-s --noseq)'{-s,--noseq}'[do not use "seq::*" in the output]' \
+  '*:: :_files'
 
 # Local Variables:
 # mode: Shell-Script

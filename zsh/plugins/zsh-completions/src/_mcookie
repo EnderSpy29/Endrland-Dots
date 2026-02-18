@@ -1,4 +1,4 @@
-#compdef rsvm
+#compdef mcookie
 # ------------------------------------------------------------------------------
 # Copyright (c) 2016 Github zsh-users - https://github.com/zsh-users
 # All rights reserved.
@@ -28,61 +28,24 @@
 # Description
 # -----------
 #
-#  Completion script for rsvm (https://github.com/sdepold/rsvm).
-#  Adapted from Docker Machine completion by hhatto (https://github.com/ilkka)
+# Completion script for mcookie, util-linux 2.40.2 (https://github.com/util-linux/util-linux/)
+#  - generate random 128-bit hexadecimal numbers
 #
-# ------------------------------------------------------------------------------
-# Authors
-# -------
-#
-#  * michaelmior (https://github.com/michaelmior)
-#
+# Author:
+#   * Aditi Sharma (https://github.com/Aditi76117)
 # ------------------------------------------------------------------------------
 
-# helper function for completing available rusts
-__rusts() {
-  declare -a rusts_cmd
-  rusts_cmd=($(ls "$HOME/.rsvm/versions"))
-  _describe 'rusts' rusts_cmd
-}
-
-# subcommands
-local -a _rsvm_cmds
-
-_rsvm_cmds=(
-   'help:Show a help message' \
-   'install:Download and install a version' \
-   'uninstall:Uninstall a version' \
-   'use:Activate a version for now and the future' \
-   'ls:List all installed versions of rust' \
-   'ls-remote:List remote versions available for install' \
-   'ls-channel:Print a channel version available for install' \
-)
-
-# subcommand completion functions
-__uninstall() {
-  __rusts
-}
-
-__use() {
-  __rusts
-}
-
-# common args
 _arguments \
-  '--help[show help]' \
-  '--version[print the version]' \
-  '*:: :->command'
+  {-f,--file}'[Use file as as cookie seed]:file:_files' \
+  {-m,--max-size}'[Set maximum length of output]:number' \
+  {-v,--verbose}'[Print entropy source and random seed info]' \
+  '(- *)'{-h,--help}'[Display help message and exit]' \
+  '(- *)'{-V,--version}'[Display version information and exit]'
 
-# start rusts!
-if (( CURRENT == 1 )); then
-  _describe -t commands 'rsvm command' _rsvm_cmds
-fi
-
-local -a _command_args
-case "$words[1]" in
-  uninstall)
-    __uninstall ;;
-  use)
-    __use ;;
-esac
+# Local Variables:
+# mode: Shell-Script
+# sh-indentation: 2
+# indent-tabs-mode: nil
+# sh-basic-offset: 2
+# End:
+# vim: ft=zsh sw=2 ts=2 et
