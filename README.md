@@ -1,7 +1,6 @@
 ## Endrland-Dots
 
-insert banner image
-
+<img src="https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="45%"></img>
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
 Hello there
