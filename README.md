@@ -1,6 +1,7 @@
 ## Endrland-Dots
 
 <img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/refs/heads/main/Showoff/ShowOff-single.png" width="45%"></img> <img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/refs/heads/main/Showoff/ShowOff-dual.png" width="45%"></img>
+
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
 Hello there
