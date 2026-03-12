@@ -1,10 +1,10 @@
 ## Endrland-Dots
 
-<img src="https://cloud.githubusercontent.com/assets/4307137/10105283/251b6868-63ae-11e5-9918-b789d9d682ec.png" width="45%"></img> <img src="https://cloud.githubusercontent.com/assets/4307137/10105290/2a183f3a-63ae-11e5-9380-50d9f6d8afd6.png" width="45%"></img>
+<img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/refs/heads/main/Showoff/ShowOff-single.png" width="45%"></img> <img src="https://raw.githubusercontent.com/EnderSpy29/Endrland-Dots/refs/heads/main/Showoff/ShowOff-dual.png" width="45%"></img>
 Get the [Wallpapers!](https://github.com/EnderSpy29/Wacky-Walls/)
 
 Hello there
-You seem to have stumbled across my hyprland dotfiles, if you'd like to give them a look click on [Showcase!](https://github.com/EnderSpy29/Endrland-Dots/Showcase/page.md)
+You seem to have stumbled across my hyprland dotfiles, These are now in a 'stable' state (and by that i mean they won't receive updates) because I'm useing SwayWM now.
 If you'd like to install the dotfiles, please follow the instructions below.
 And if installing them manually was tedious, maybe you'd like to contribute to this project and add an installation script.
 
@@ -31,14 +31,8 @@ https://aylur.github.io/astal/guide/getting-started/installation
 
 **Require Package list** WIP
 
-This is all the required packages + Some just to be safe ones + Some rice terminal stuff (yazi file manager my beloved)
+This is all the required packages + Some just to be safe ones + Some rice terminal stuff (yazi file manager my beloved) (use paru or yay) (It is highly probable I've forgotten some packages)
 
 ```
-hyprpicker qt5ct qt6ct nwg-look grim gtk-engine-murrine slurp fastfetch kvantum zsh kitty yazi mesa lib32-mesa  vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
-```
-
-**AUR Packages**
-
-```
-waypaper wallust macchina quickshell
+paru swaybg xdg-desktop-portal-hyprland waypaper wallust macchina quickshell hyprpicker qt5ct qt6ct nwg-look grim gtk-engine-murrine slurp fastfetch kvantum zsh kitty yazi mesa lib32-mesa  vulkan-radeon lib32-vulkan-radeon opencl-clover-mesa opencl-rusticl-mesa libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 ```
