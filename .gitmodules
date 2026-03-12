@@ -1,3 +1,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/EnderSpy29/Ender-zsh.git
+[submodule "Ender-zsh"]
+	path = Ender-zsh
+	url = https://github.com/EnderSpy29/Ender-zsh.git

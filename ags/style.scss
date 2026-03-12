@@ -1,0 +1,48 @@
+window.Bar{
+    font-family: "NotoMono Nerd Font";
+    opacity: 0.92;
+    background: transparent;
+    color: @theme_fg_color;
+}
+
+centerbox{
+    min-height: 30px;
+    margin-top: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+box{
+    border: 2px solid #E2BBF0;
+    background: @theme_bg_color;
+    border-radius: 4px;
+}
+
+button{
+    border-radius: 4px;
+}
+
+.Notifcolor{
+    color: #B396E8;
+    border: 2px solid #B396E8;
+    border-radius: 1px;
+}
+
+.Workspaces{
+    border-width: 0px;
+}
+
+.Media{
+    border-width: 0px;
+}
+
+.Volume{
+    border-width: 0px;
+}
+
+.Volume icon {
+    margin-left: 10px;
+}
+.SysTray{
+    border-width: 0px;
+}
